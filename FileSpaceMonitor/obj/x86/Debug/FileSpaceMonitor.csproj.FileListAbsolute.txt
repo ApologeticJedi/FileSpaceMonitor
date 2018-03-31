@@ -1,0 +1,11 @@
+C:\Users\brianc\Documents\Visual Studio 2010\Projects\FileSpaceMonitor\FileSpaceMonitor\bin\Debug\FileSpaceMonitor.exe.config
+C:\Users\brianc\Documents\Visual Studio 2010\Projects\FileSpaceMonitor\FileSpaceMonitor\bin\Debug\FileSpaceMonitor.exe
+C:\Users\brianc\Documents\Visual Studio 2010\Projects\FileSpaceMonitor\FileSpaceMonitor\bin\Debug\FileSpaceMonitor.pdb
+C:\Users\brianc\Documents\Visual Studio 2010\Projects\FileSpaceMonitor\FileSpaceMonitor\bin\Debug\Newtonsoft.Json.dll
+C:\Users\brianc\Documents\Visual Studio 2010\Projects\FileSpaceMonitor\FileSpaceMonitor\bin\Debug\Newtonsoft.Json.xml
+C:\Users\brianc\Documents\Visual Studio 2010\Projects\FileSpaceMonitor\FileSpaceMonitor\obj\x86\Debug\FileSpaceMonitor.exe
+C:\Users\brianc\Documents\Visual Studio 2010\Projects\FileSpaceMonitor\FileSpaceMonitor\obj\x86\Debug\FileSpaceMonitor.pdb
+C:\Users\brianc\Documents\Visual Studio 2010\Projects\FileSpaceMonitor\FileSpaceMonitor\obj\x86\Debug\FileSpaceMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Documents\Visual Studio 2015\Projects\FileSpaceMonitor\FileSpaceMonitor\bin\Debug\FileSpaceMonitor.exe.config
+C:\Users\Brian\Documents\Visual Studio 2015\Projects\FileSpaceMonitor\FileSpaceMonitor\obj\x86\Debug\FileSpaceMonitor.exe
+C:\Users\Brian\Documents\Visual Studio 2015\Projects\FileSpaceMonitor\FileSpaceMonitor\obj\x86\Debug\FileSpaceMonitor.pdb
