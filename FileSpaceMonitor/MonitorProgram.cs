@@ -1,5 +1,4 @@
-﻿using System.Configuration;
-using FileSpaceMonitor.Tools.Configuration;
+﻿using FileSpaceMonitor.Tools.Configuration;
 using FileSpaceMonitor.Tools.Logging;
 using FileSpaceMonitor.Tools.SpaceManager;
 
@@ -10,7 +9,7 @@ namespace FileSpaceMonitor
         static void Main()
         {
             LogHelper.Log("Monitor Program", "New Launch");            
-            ServerSection serverSection = ConfigurationManager.GetSection("serverSection") as ServerSection;
+            ServerSection serverSection = AppConfig.ServerMonitorSection;
             if (serverSection != null)
                 foreach (ServerElement se in serverSection.ServerCollection)
                 {
