@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Configuration;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using FileSpaceMonitor.Tools.CommandMessaging;
@@ -119,7 +118,7 @@ namespace FileSpaceMonitor.Tools.SpaceManager
                 case MessagingType.slack:
                     string slackWarn = ":warning: *Warning!*\n>" + text;
                     SlackClient client = new SlackClient();
-                    client.PostMessage(slackWarn, "monitor-bot", ConfigurationManager.AppSettings.Get("SlackChannel"));
+                    client.PostMessage(slackWarn, "monitor-bot", AppConfig.SlackChannel);
                     break;
 
                 case MessagingType.none:
