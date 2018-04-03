@@ -1,5 +1,5 @@
-﻿using System;
-using System.Configuration;
+﻿using FileSpaceMonitor.Tools.Configuration;
+using System;
 using System.IO;
 
 
@@ -17,13 +17,10 @@ namespace FileSpaceMonitor.Tools.Logging
 
         public FileLogger()
         {
-            ApplicationName = ConfigurationManager.AppSettings.Get("ApplicationName");
-            LogPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + '\\' + ApplicationName;
-            LogFile = LogPath + '\\' + ApplicationName + ConfigurationManager.AppSettings.Get("LogFileExtension");
-
-            int max;
-            MaxSize = int.TryParse(ConfigurationManager.AppSettings.Get("MaxLogSize"), out max) ? max : MAX_LOG_SIZE;
-
+            ApplicationName = AppConfig.ApplicationName;
+            LogPath = AppConfig.LogPath;
+            LogFile = AppConfig.LogFile;
+            MaxSize = AppConfig.MaxLogSize;  
         }
 
         public override void Log(string message)
@@ -45,7 +42,7 @@ namespace FileSpaceMonitor.Tools.Logging
             FileInfo logFileInfo = new FileInfo(LogFile);            
             if (logFileInfo.Exists && logFileInfo.Length > MaxSize)
             {
-                string oldLogFile = LogPath + '\\' + ApplicationName + ".backuplog";
+                string oldLogFile = AppConfig.BackupLogFile;
                 File.Copy(LogFile, oldLogFile, true);
                 File.Delete(LogFile);
             }
