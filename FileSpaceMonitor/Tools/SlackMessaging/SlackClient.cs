@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Configuration;
 using System.Collections.Specialized;
 using System.Net;
 using System.Text;
+using FileSpaceMonitor.Tools.Configuration;
 using Newtonsoft.Json;
 
 namespace FileSpaceMonitor.Tools.SlackMessaging
@@ -23,7 +23,7 @@ namespace FileSpaceMonitor.Tools.SlackMessaging
         /// </summary>
         public SlackClient()
         {
-            _uri = new Uri(ConfigurationManager.AppSettings.Get("SlackUrl"));
+            _uri = new Uri(AppConfig.SlackUrl);
         }
 
         /// <summary>
