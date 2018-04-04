@@ -95,7 +95,7 @@ namespace FileSpaceMonitor.Tools.Configuration
         private static TValue GetAppSettingValue<TValue>(string key)
         {
             var value = GetAppSettingValue(key);
-            return (!string.IsNullOrEmpty(value)) ? (TValue)Convert.ChangeType(value, typeof(TValue)) : return default(TValue);
+            return (string.IsNullOrEmpty(value)) ? default(TValue) : (TValue)Convert.ChangeType(value, typeof(TValue));
         }
 
         public static bool TryGetAppSetting<TValue>(string key, out TValue value)
